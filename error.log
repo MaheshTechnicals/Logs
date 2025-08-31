@@ -1,0 +1,236 @@
+FAILED: build out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log (priority: 4)
+Outputs: out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log
+Error: exited with code: 1
+Command: /bin/bash -c "(echo \"PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS=true\" > out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log ) && (echo -n -e 'Deps: \\n  ' >> out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log ) && (sed 's/ /\\n  /g' <<< \"out/target/product/miatoll/system/etc/vintf/compatibility_matrix.202404.xml out/target/product/miatoll/system/etc/vintf/compatibility_matrix.5.xml out/target/product/miatoll/system/etc/vintf/compatibility_matrix.6.xml out/target/product/miatoll/system/etc/vintf/compatibility_matrix.7.xml out/target/product/miatoll/system/etc/vintf/compatibility_matrix.8.xml out/target/product/miatoll/system/etc/vintf/compatibility_matrix.device.xml out/target/product/miatoll/system/etc/vintf/manifest.xml out/target/product/miatoll/system/etc/vintf/manifest/android.frameworks.stats-service.xml out/target/product/miatoll/system/etc/vintf/manifest/android.system.keystore2-service.xml out/target/product/miatoll/system/etc/vintf/manifest/android.system.net.netd-service.xml out/target/product/miatoll/system/etc/vintf/manifest/android.system.suspend-service.xml out/target/product/miatoll/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service.xml out/target/product/miatoll/system/etc/vintf/manifest/manifest_media_c2_software.xml out/target/product/miatoll/system/etc/vintf/manifest/manifest_services.xml out/target/product/miatoll/system/etc/vintf/manifest/manifest_services_android.frameworks.vibrator.xml out/target/product/miatoll/system_ext/etc/vintf/manifest.xml out/target/product/miatoll/system_ext/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml out/target/product/miatoll/vendor/etc/vintf/compatibility_matrix.xml out/target/product/miatoll/vendor/etc/vintf/manifest.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint-service.xiaomi.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.graphics.composer-qti-display.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.light-service.lineage.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.power-service.lineage.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.sensors.xiaomi-multihal.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.dual_role_usb.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi-service.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml out/target/product/miatoll/vendor/etc/vintf/manifest/bluetooth_audio.xml out/target/product/miatoll/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml out/target/product/miatoll/vendor/etc/vintf/manifest/memtrack_qti.xml out/target/product/miatoll/vendor/etc/vintf/manifest/nfc-service-nxp.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.lineage.health-service.default.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_configs.txt out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt\" >> out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log ) && (echo -n -e 'Args: \\n  ' >> out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log ) && (cat <<< \" --kernel out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt:out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_configs.txt --dirmap /system:out/target/product/miatoll/system --dirmap /vendor:out/target/product/miatoll/vendor --dirmap /odm:out/target/product/miatoll/vendor/odm --dirmap /product:out/target/product/miatoll/product --dirmap /system_ext:out/target/product/miatoll/system_ext --dirmap /apex:out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex  --property ro.product.first_api_level=29\" >> out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log ) && (echo \"For ODM SKU = EMPTY_ODM_SKU_PLACEHOLDER, vendor SKU = EMPTY_VENDOR_SKU_PLACEHOLDER\" >> out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log; ( out/host/linux-x86/bin/checkvintf --check-compat  --kernel out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt:out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_configs.txt --dirmap /system:out/target/product/miatoll/system --dirmap /vendor:out/target/product/miatoll/vendor --dirmap /odm:out/target/product/miatoll/vendor/odm --dirmap /product:out/target/product/miatoll/product --dirmap /system_ext:out/target/product/miatoll/system_ext --dirmap /apex:out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex  --property ro.product.first_api_level=29 --property ro.boot.product.hardware.sku= --property ro.boot.product.vendor.sku= >> out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log 2>&1 ) || (cat out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible.log && exit 1) )"
+Output:
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS=true
+Deps: 
+  out/target/product/miatoll/system/etc/vintf/compatibility_matrix.202404.xml
+  out/target/product/miatoll/system/etc/vintf/compatibility_matrix.5.xml
+  out/target/product/miatoll/system/etc/vintf/compatibility_matrix.6.xml
+  out/target/product/miatoll/system/etc/vintf/compatibility_matrix.7.xml
+  out/target/product/miatoll/system/etc/vintf/compatibility_matrix.8.xml
+  out/target/product/miatoll/system/etc/vintf/compatibility_matrix.device.xml
+  out/target/product/miatoll/system/etc/vintf/manifest.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/android.frameworks.stats-service.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/android.system.keystore2-service.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/android.system.net.netd-service.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/android.system.suspend-service.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/manifest_media_c2_software.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/manifest_services.xml
+  out/target/product/miatoll/system/etc/vintf/manifest/manifest_services_android.frameworks.vibrator.xml
+  out/target/product/miatoll/system_ext/etc/vintf/manifest.xml
+  out/target/product/miatoll/system_ext/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml
+  out/target/product/miatoll/vendor/etc/vintf/compatibility_matrix.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint-service.xiaomi.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.graphics.composer-qti-display.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.light-service.lineage.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.power-service.lineage.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.sensors.xiaomi-multihal.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.dual_role_usb.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi-service.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/bluetooth_audio.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/memtrack_qti.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/nfc-service-nxp.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.lineage.health-service.default.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml
+  out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
+  out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml
+  out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_configs.txt
+  out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt
+Args: 
+   --kernel out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt:out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_configs.txt --dirmap /system:out/target/product/miatoll/system --dirmap /vendor:out/target/product/miatoll/vendor --dirmap /odm:out/target/product/miatoll/vendor/odm --dirmap /product:out/target/product/miatoll/product --dirmap /system_ext:out/target/product/miatoll/system_ext --dirmap /apex:out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex  --property ro.product.first_api_level=29
+For ODM SKU = EMPTY_ODM_SKU_PLACEHOLDER, vendor SKU = EMPTY_VENDOR_SKU_PLACEHOLDER
+Cannot parse "out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt" as kernel version, parsing as GKI kernel release.
+Cannot parse "out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt" as GKI kernel release, parsing as kernel release
+Cannot parse "out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt" as kernel release
+Cannot parse "4.14.336-g803b55865869" as kernel version, parsing as GKI kernel release.
+Cannot parse "4.14.336-g803b55865869" as GKI kernel release, parsing as kernel release
+"4.14.336-g803b55865869" is not a mainline kernel.
+Successfully parsed content of out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_version.txt: 4.14.336-g803b55865869
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+getFrameworkHalManifest: Reading VINTF information.
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/system/etc/vintf/manifest/': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/android.system.net.netd-service.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/android.system.suspend-service.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/android.frameworks.stats-service.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/manifest_services_android.frameworks.vibrator.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/manifest_media_c2_software.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/android.system.keystore2-service.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest/manifest_services.xml': OK
+Fetch 'out/target/product/miatoll/product/etc/vintf/manifest.xml': NAME_NOT_FOUND
+List 'out/target/product/miatoll/product/etc/vintf/manifest/': NAME_NOT_FOUND
+Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/system_ext/etc/vintf/manifest/': OK
+Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Fetch 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Loaded APEX Infos from /apex/apex-info-list.xml
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+getDeviceHalManifest: Reading VINTF information.
+Sysprop ro.boot.product.vendor.sku=
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/vendor/etc/vintf/manifest/': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.light-service.lineage.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/memtrack_qti.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.dual_role_usb.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.sensors.xiaomi-multihal.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/bluetooth_audio.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.graphics.composer-qti-display.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.wifi-service.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.lineage.health-service.default.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.power-service.lineage.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint-service.xiaomi.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/nfc-service-nxp.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml': OK
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Fetch 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Loaded APEX Infos from /apex/apex-info-list.xml
+Sysprop ro.boot.product.hardware.sku=
+Fetch 'out/target/product/miatoll/vendor/odm/etc/vintf/manifest.xml': NAME_NOT_FOUND
+Fetch 'out/target/product/miatoll/vendor/odm/etc/manifest.xml': NAME_NOT_FOUND
+List 'out/target/product/miatoll/vendor/odm/etc/vintf/manifest/': NAME_NOT_FOUND
+getDeviceHalManifest: Successfully processed VINTF information
+getFrameworkHalManifest: Successfully processed VINTF information
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+fetched kernel level from RuntimeInfo ''
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+getFrameworkCompatibilityMatrix: Reading VINTF information.
+List 'out/target/product/miatoll/system/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.202404.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.8.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.7.xml': OK
+List 'out/target/product/miatoll/system_ext/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/product/etc/vintf/': NAME_NOT_FOUND
+getFrameworkCompatibilityMatrix: Successfully processed VINTF information
+getDeviceCompatibilityMatrix: Reading VINTF information.
+Fetch 'out/target/product/miatoll/vendor/etc/vintf/compatibility_matrix.xml': OK
+getDeviceCompatibilityMatrix: Successfully processed VINTF information
+fetched kernel version 4.14.336
+read kernel configs from out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/kernel_configs.txt
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+List 'out/target/product/miatoll/system/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.202404.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.8.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.7.xml': OK
+List 'out/target/product/miatoll/system_ext/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/product/etc/vintf/': NAME_NOT_FOUND
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+List 'out/target/product/miatoll/system/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.202404.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.8.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.7.xml': OK
+List 'out/target/product/miatoll/system_ext/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/product/etc/vintf/': NAME_NOT_FOUND
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+Sysprop apex.all.ready is missing, default to ''
+Get modified time 'out/target/product/miatoll/obj/PACKAGING/check_vintf_all_intermediates/apex/apex-info-list.xml': OK
+List 'out/target/product/miatoll/system/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.202404.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.8.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/manifest.xml': OK
+Fetch 'out/target/product/miatoll/system/etc/vintf/compatibility_matrix.7.xml': OK
+List 'out/target/product/miatoll/system_ext/etc/vintf/': OK
+Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest.xml': OK
+List 'out/target/product/miatoll/product/etc/vintf/': NAME_NOT_FOUND
+The following HALs in device manifest are not declared in FCM <= level 6: 
+  android.hardware.biometrics.fingerprint.IFingerprint/default (@4)
+  android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default (@4)
+  android.hardware.drm.IDrmFactory/clearkey (@1)
+  android.hardware.health.IHealth/default (@3)
+  android.hardware.ir.IConsumerIr/default (@1)
+  android.hardware.light.ILights/default (@2)
+  android.hardware.power.IPower/default (@5)
+  android.hardware.sensors.ISensors/default (@2)
+  android.hardware.thermal.IThermal/default (@2)
+  android.hardware.wifi.IWifi/default (@2)
+  android.hardware.wifi.hostapd.IHostapd/default (@2)
+  android.hardware.wifi.supplicant.ISupplicant/default (@3)
+  vendor.xiaomi.hardware.misys@1.0::IMiSys/default
+  vendor.xiaomi.hardware.misys@2.0::IMiSys/default
+  vendor.xiaomi.hardware.misys@3.0::IMiSys/default
+ERROR: files are incompatible: The following instances are in the device manifest but not specified in framework compatibility matrix: 
+    vendor.xiaomi.hardware.misys@1.0::IMiSys/default
+    vendor.xiaomi.hardware.misys@2.0::IMiSys/default
+    vendor.xiaomi.hardware.misys@3.0::IMiSys/default
+Suggested fix:
+1. Update deprecated HALs to the latest version.
+2. Check for any typos in device manifest or framework compatibility matrices with FCM version >= 6.
+3. For new platform HALs, add them to any framework compatibility matrix with FCM version >= 6 where applicable.
+4. For device-specific HALs, add to DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE or DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE.: Success
+INCOMPATIBLE
+
