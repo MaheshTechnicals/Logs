@@ -209,22 +209,12 @@ Fetch 'out/target/product/miatoll/system_ext/etc/vintf/manifest.xml': OK
 List 'out/target/product/miatoll/product/etc/vintf/': NAME_NOT_FOUND
 The following HALs in device manifest are not declared in FCM <= level 6: 
   android.hardware.biometrics.fingerprint.IFingerprint/default (@4)
-  android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default (@4)
-  android.hardware.drm.IDrmFactory/clearkey (@1)
   android.hardware.gnss@1.0::IGnss/gnss_vendor
   android.hardware.health.IHealth/default (@3)
-  android.hardware.ir.IConsumerIr/default (@1)
-  android.hardware.light.ILights/default (@2)
   android.hardware.nfc.INfc/default (@1)
   android.hardware.power.IPower/default (@5)
   android.hardware.sensors.ISensors/default (@2)
   android.hardware.thermal.IThermal/default (@2)
-  android.hardware.wifi.IWifi/default (@2)
-  android.hardware.wifi.hostapd.IHostapd/default (@2)
-  android.hardware.wifi.supplicant.ISupplicant/default (@3)
-  com.fingerprints.extension@1.0::IFingerprintEngineering/default
-  com.fingerprints.extension@1.0::IFingerprintNavigation/default
-  com.fingerprints.extension@1.0::IFingerprintSensorTest/default
   com.qualcomm.qti.dpm.api@1.0::IdpmQmi/dpmQmiService
   com.qualcomm.qti.imscmservice@2.2::IImsCmService/qti.ims.connectionmanagerservice
   com.qualcomm.qti.uceservice@2.3::IUceService/com.qualcomm.qti.uceservice
@@ -300,9 +290,6 @@ The following HALs in device manifest are not declared in FCM <= level 6:
   vendor.qti.imsrtpservice@3.0::IRTPService/imsrtpservice
 ERROR: files are incompatible: The following instances are in the device manifest but not specified in framework compatibility matrix: 
     android.hardware.gnss@1.0::IGnss/gnss_vendor
-    com.fingerprints.extension@1.0::IFingerprintEngineering/default
-    com.fingerprints.extension@1.0::IFingerprintNavigation/default
-    com.fingerprints.extension@1.0::IFingerprintSensorTest/default
     com.qualcomm.qti.dpm.api@1.0::IdpmQmi/dpmQmiService
     com.qualcomm.qti.imscmservice@2.2::IImsCmService/qti.ims.connectionmanagerservice
     com.qualcomm.qti.uceservice@2.3::IUceService/com.qualcomm.qti.uceservice
